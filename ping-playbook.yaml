@@ -1,5 +1,0 @@
-- name: sample playbook for ping
-  hosts: web
-  tasks: #tasks=module=collections
-  - name: ping the server
-    ansible.builtin.ping:

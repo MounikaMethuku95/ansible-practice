@@ -1,0 +1,11 @@
+- name: Mounika
+  email: mounikamethuku95@gmail.com
+  addresses:
+  - type: perm
+    doorno: 123
+    street: "c street"
+    city: kurnool
+  - type: perm
+    doorno: 1234
+    street: "ca street"
+    city: kurnooll
