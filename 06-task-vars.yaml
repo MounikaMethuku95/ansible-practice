@@ -1,13 +1,13 @@
 - name: variables defined at task level
   hosts: local
   connection: local
-  vars: #PLAY level vars
+  vars: #PLAY level vars , global variables
     course: "devops with aws"
     duration: "120 Hours"
     trainer: "siva kumar"
   tasks:
   - name: print the variables
-    vars: #task level variables
+    vars: #task level variables , local variables
       course: Ansible
     ansible.builtin.debug:
       msg: "course is {{ course }}, duaration is {{ duration }}, and trainer is {{ trainer }}"
@@ -15,3 +15,5 @@
   - name: print the variables
     ansible.builtin.debug:
       msg: "course is {{ course }}, duaration is {{ duration }}, and trainer is {{ trainer }}" 
+
+#NOTE: Task level variables are accessible only with in the task. Task variables can override play level variables but only for the said task.
