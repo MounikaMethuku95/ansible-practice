@@ -11,7 +11,7 @@
   - name: trainer
     prompt: enter trainer name
     private: false #if not confidential
-tasks:
+  tasks:
   - name: print course information
     ansible.builtin.debug:
       msg: "Course is {{ course }}, duration is {{ duration }}, and trainer is {{ trainer }}"
