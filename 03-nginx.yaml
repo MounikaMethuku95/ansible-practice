@@ -2,7 +2,7 @@
   hosts: web
   become: yes # is equal to -b
   tasks: 
-  - name: install ansible 
+  - name: install nginx 
     ansible.builtin.package:
       name: nginx
       state: present
@@ -10,3 +10,4 @@
     ansible.builtin.service:
       name: nginx
       state: started
+      enabled: yes
