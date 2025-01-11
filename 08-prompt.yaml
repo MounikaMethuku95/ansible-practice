@@ -8,7 +8,7 @@
   - name: duration
     prompt: enter the course duration
     private: false #if not confidential
- - name: trainer
+  - name: trainer
     prompt: enter trainer name
     private: false #if not confidential
 tasks:
